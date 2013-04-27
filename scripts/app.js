@@ -3,7 +3,11 @@
 var app = angular.module('videoPlayer', ['videoModule'])
 
 
-app.config(function ($routeProvider) {
+app.config(function ($locationProvider, $routeProvider) {
+    
+    $locationProvider.hashPrefix("!");
+    $locationProvider.html5Mode(false);
+    
     $routeProvider.
     when('/', {
         controller: 'SearchController',

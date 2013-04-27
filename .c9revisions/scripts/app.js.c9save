@@ -5,3 +5,4 @@
 {"ts":1367021477571,"patch":[[{"diffs":[[0,"ayer', ["],[1,"''"],[0,"])\r\n\r\n\r\n"]],"start1":50,"start2":50,"length1":16,"length2":18}]],"length":404,"saved":false}
 {"ts":1367021489096,"patch":[[{"diffs":[[0,"yer', ['"],[1,"videoModule"],[0,"'])\r\n\r\n\r"]],"start1":51,"start2":51,"length1":16,"length2":27}]],"length":415,"saved":false}
 {"ts":1367021519367,"patch":[[{"diffs":[[0," 'views/"],[-1,"watch"],[1,"details"],[0,".html'\r\n"]],"start1":331,"start2":331,"length1":21,"length2":23}]],"length":417,"saved":false}
+{"ts":1367025170210,"patch":[[{"diffs":[[0,"n ($"],[-1,"routeProvider) {"],[1,"locationProvider, $routeProvider) {\r\n    \r\n    $locationProvider.hashPrefix(\"!\");\r\n    $locationProvider.html5Mode(false);\r\n    "],[0,"\r\n  "]],"start1":97,"start2":97,"length1":24,"length2":136}]],"length":529,"saved":false}
