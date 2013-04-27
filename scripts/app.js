@@ -11,11 +11,11 @@ app.config(function ($locationProvider, $routeProvider) {
     $routeProvider.
     when('/', {
         controller: 'SearchController',
-        templateUrl: 'views/search.html'
+        template: 'views/search.html'
     }).
     when('/watch', {
         controller: 'WatchController',
-        templateUrl: 'views/details.html'
+        template: 'views/details.html'
     }).
     otherwise({
         redirectTo: '/'
