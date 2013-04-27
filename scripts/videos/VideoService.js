@@ -1,6 +1,6 @@
 'use strict';
 
-function VideoService($http) {
+function VideoService() {
     
     this.search = function(term) {
         return [{"name":"video1", "url":"http://youtube.com"}, {"name":"video2", "url":"http://youtube.com"}];  

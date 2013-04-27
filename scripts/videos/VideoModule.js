@@ -4,9 +4,9 @@
 
 var videoModule = angular.module('videoModule',[]);
  
-videoModule.factory('videoService', ['$http', function($http) {
+videoModule.factory('videoService', function() {
   return new VideoService($http);
-}]);
+});
  
 videoModule.factory('searchModel', ['videoService', function(videoService) {
   return new SearchModel(videoService);
