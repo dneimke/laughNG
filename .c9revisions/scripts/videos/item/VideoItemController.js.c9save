@@ -1,0 +1,3 @@
+{"ts":1367018627407,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1367020483734,"patch":[[{"diffs":[[1,"'use strict';\n\n/*\n * @model - SearchResultsModel\n */\nfunction WatchController($scope, model) {\n    \n}"]],"start1":0,"start2":0,"length1":0,"length2":101}]],"length":101,"saved":false}
+{"ts":1367020495375,"patch":[[{"diffs":[[0,"l - "],[-1,"SearchResults"],[1,"VideoItem"],[0,"Mode"]],"start1":26,"start2":26,"length1":21,"length2":17}]],"length":97,"saved":false}

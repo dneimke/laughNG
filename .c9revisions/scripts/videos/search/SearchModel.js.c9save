@@ -1,0 +1,4 @@
+{"ts":1367020158662,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1367020173252,"patch":[[{"diffs":[[1,"'use strict';\n\nfunction SearchResultsModel(http) {"]],"start1":0,"start2":0,"length1":0,"length2":50}]],"length":50,"saved":false}
+{"ts":1367020181571,"patch":[[{"diffs":[[0,"del("],[-1,"http) {"],[1,"videoService) {\n    \n}"]],"start1":39,"start2":39,"length1":11,"length2":26}]],"length":65,"saved":false}
+{"ts":1367020570766,"patch":[[{"diffs":[[0,"rict';\n\n"],[1,"/*\n * @videoService - VideoService\n */\n"],[0,"function"]],"start1":7,"start2":7,"length1":16,"length2":55}]],"length":104,"saved":false}

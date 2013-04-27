@@ -1,0 +1,1 @@
+{"ts":1367020656044,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"'use strict';\n\n/*\n * @model - SearchResultsModel\n */\nfunction SearchController($scope, model) {\n    \n}"]],"start1":0,"start2":0,"length1":0,"length2":102}]],"length":102}
