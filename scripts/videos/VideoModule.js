@@ -2,10 +2,10 @@
 
 /// <reference path="VideoService.js" />
 
-var videoModule = angular.module('videoModule',[]);
+var videoModule = angular.module('videoModule', []);
  
 videoModule.factory('videoService', function() {
-  return new VideoService($http);
+  return new VideoService();
 });
  
 videoModule.factory('searchModel', ['videoService', function(videoService) {
