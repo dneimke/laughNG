@@ -21,12 +21,12 @@ app.config(function($routeProvider) {
         });
 });
 
-app.controller('searchController', ['$scope', 'searchModel', function($scope, searchModel) {
-
+app.controller('searchController', ['$scope', 'searchModel', function() {
+   return new SearchController($scope, searchModel);
 }]);
  
 app.controller('videoItemController', ['$scope', 'videoItemModel', function($scope, videoItemModel) {
-
+  return new VideoItemController($scope, videoItemModel);
 }]);
 
 
