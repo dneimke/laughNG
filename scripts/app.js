@@ -1,20 +1,44 @@
 'use strict';
 
-var app = angular.module('videoPlayer', ['videoModule']);
+var app = angular.module('videoPlayer', [function() {
+
+}]);
 
 
-app.config(function ($routeProvider) {
+app.config(function($routeProvider) {
     
     $routeProvider.
         when('/', {
-            controller: 'SearchController',
+            controller: 'searchController',
             templateUrl: 'views/search.html'
         }).
         when('/watch', {
-            controller: 'WatchController',
+            controller: 'videoItemController',
             templateUrl: 'views/details.html'
         }).
         otherwise({
             redirectTo: '/'
         });
 });
+
+app.controller('searchController', ['$scope', 'searchModel', function($scope, searchModel) {
+
+}]);
+ 
+app.controller('videoItemController', ['$scope', 'videoItemModel', function($scope, videoItemModel) {
+
+}]);
+
+
+app.factory('videoService', function() {
+  return new VideoService();
+});
+ 
+
+app.factory('searchModel', ['videoService', function(videoService) {
+  return new SearchModel(videoService);
+}]);
+
+app.factory('videoItemModel', ['videoService', function(videoService) {
+  return new VideoItemModel(videoService);
+}]);
