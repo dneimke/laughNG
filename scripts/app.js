@@ -1,8 +1,6 @@
 'use strict';
 
-var app = angular.module('videoPlayer', [function() {
-
-}]);
+var app = angular.module('videoPlayer', ['videoModule']);
 
 
 app.config(function($routeProvider) {
@@ -20,25 +18,3 @@ app.config(function($routeProvider) {
             redirectTo: '/'
         });
 });
-
-app.controller('searchController', ['$scope', 'searchModel', function() {
-   return new SearchController($scope, searchModel);
-}]);
- 
-app.controller('videoItemController', ['$scope', 'videoItemModel', function($scope, videoItemModel) {
-  return new VideoItemController($scope, videoItemModel);
-}]);
-
-
-app.factory('videoService', function() {
-  return new VideoService();
-});
- 
-
-app.factory('searchModel', ['videoService', function(videoService) {
-  return new SearchModel(videoService);
-}]);
-
-app.factory('videoItemModel', ['videoService', function(videoService) {
-  return new VideoItemModel(videoService);
-}]);
