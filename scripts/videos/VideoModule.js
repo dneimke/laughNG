@@ -1,7 +1,5 @@
 'use strict';
 
-/// <reference path="VideoService.js" />
-
 var videoModule = angular.module('videoModule', []);
  
 videoModule.factory('videoService', function() {
@@ -16,6 +14,10 @@ videoModule.factory('videoItemModel', ['videoService', function(videoService) {
   return new VideoItemModel(videoService);
 }]);
  
-videoModule.controller('searchController', ['$scope', 'searchModel', SearchController]);
+videoModule.controller(
+    'searchController', 
+    ['$scope', 'searchModel', SearchController($scope, searchModel)]);
  
-videoModule.controller('videoItemController', ['$scope', 'videoItemModel', VideoItemController]);
+videoModule.controller(
+    'videoItemController', 
+    ['$scope', 'videoItemModel', VideoItemController($scope, videoItemModel)]);
