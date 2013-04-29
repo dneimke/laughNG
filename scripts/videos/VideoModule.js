@@ -13,8 +13,8 @@ module.controller('videoItemController', ['$scope', 'videoItemModel', function($
 }]);
 
 
-module.factory('videoService', ['$https', function($https) {
-  var service = new YouTubeDataService($https);
+module.factory('videoService', ['$http', function($http) {
+  var service = new YouTubeDataService($http);
   
   service.settings = {
       url: 'https://www.googleapis.com/youtube/v3/videos',
