@@ -18,7 +18,8 @@ module.factory('videoService', ['$http', function($http) {
   
   service.settings = {
       url: 'https://www.googleapis.com/youtube/v3/videos',
-      method: 'GET'
+      method: 'GET',
+      apiKey: 'YOURAPIKEY'
   };
   
   return service;

@@ -1,1 +1,3 @@
 {"ts":1367020656044,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"'use strict';\n\n/*\n * @model - SearchResultsModel\n */\nfunction SearchController($scope, model) {\n    \n}"]],"start1":0,"start2":0,"length1":0,"length2":102}]],"length":102}
+{"contributors":[],"silentsave":false,"ts":1367277216833,"patch":[[{"diffs":[[0," {\n    \n"],[1,"    $scope.term = '';\n    \n    $scope.search = function() {\n        var items = model.doSearch($scope.term);\n    }\n"],[0,"}"]],"start1":93,"start2":93,"length1":9,"length2":124}]],"length":217,"saved":false}
+{"ts":1367277341853,"patch":[[{"diffs":[[0,"m = '';\n"],[1,"    $scope.items = [];\n"],[0,"    \n   "]],"start1":115,"start2":115,"length1":16,"length2":39}]],"length":240,"saved":false}

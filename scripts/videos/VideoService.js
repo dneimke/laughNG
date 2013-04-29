@@ -6,6 +6,7 @@ function YouTubeDataService($http, settings) {
     
     this.search = function(term) {
         //TODO: format url
+        console.log('YouTubeDataService.search');
         
         $http({method: settings.method, url: settings.url}).
           success(function(data, status) {
