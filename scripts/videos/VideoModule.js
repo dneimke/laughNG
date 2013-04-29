@@ -14,7 +14,7 @@ module.controller('videoItemController', ['$scope', 'videoItemModel', function($
 
 
 module.factory('videoService', ['$https', function($https) {
-  var service = new VideoService($https);
+  var service = new YouTubeDataService($https);
   
   service.settings = {
       url: 'https://www.googleapis.com/youtube/v3/videos',

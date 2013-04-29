@@ -1,6 +1,6 @@
 'use strict';
 
-function VideoService($http, settings) {
+function YouTubeDataService($http, settings) {
     
     this.settings = settings || {};
     
