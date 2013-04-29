@@ -1,12 +1,32 @@
 'use strict';
 
-function VideoService() {
+function VideoService($http, settings) {
+    
+    this.settings = settings || {};
     
     this.search = function(term) {
-        return [{"name":"video1", "url":"http://youtube.com"}, {"name":"video2", "url":"http://youtube.com"}];  
+        //TODO: format url
+        
+        $http({method: settings.method, url: settings.url}).
+          success(function(data, status) {
+            return data;
+          }).
+          error(function(data, status) {
+            return 'Error: ' + data;
+        });
     };
     
-    this.get = function(id) {
-        return {"name":"video"+id, "url":"http://youtube.com"};
+    
+    
+    this.get = function(videoId) {
+        //TODO: format url
+        
+        $http({method: settings.method, url: settings.url}).
+          success(function(data, status) {
+            return data;
+          }).
+          error(function(data, status) {
+            return 'Error: ' + data;
+        });
     };
 }

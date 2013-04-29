@@ -13,9 +13,16 @@ module.controller('videoItemController', ['$scope', 'videoItemModel', function($
 }]);
 
 
-module.factory('videoService', function() {
-  return new VideoService();
-});
+module.factory('videoService', ['$https', function($https) {
+  var service = new VideoService($https);
+  
+  service.settings = {
+      url: 'https://www.googleapis.com/youtube/v3/videos',
+      method: 'GET'
+  };
+  
+  return service;
+}]);
  
 
 module.factory('searchModel', ['videoService', function(videoService) {
