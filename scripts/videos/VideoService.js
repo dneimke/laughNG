@@ -5,29 +5,25 @@ function YouTubeDataService($http, settings) {
     this.settings = settings || {};
     
     this.search = function(term) {
-        //TODO: format url
-        console.log('YouTubeDataService.search');
         
-        $http({method: settings.method, url: settings.url}).
-          success(function(data, status) {
-            return data;
-          }).
-          error(function(data, status) {
-            return 'Error: ' + data;
-        });
+        console.log('YouTubeDataService.search');
+            
+        var params = 'search?q=' + term + '&key=' + this.settings.apiKey + '&type=video&part=snippet&callback=JSON_CALLBACK';
+        var url = this.settings.url + params;
+        
+        var data = [] ;
+        
+        return $http({method: this.settings.method, url: url});
     };
     
     
     
     this.get = function(videoId) {
-        //TODO: format url
+        console.log('YouTubeDataService.get');
         
-        $http({method: settings.method, url: settings.url}).
-          success(function(data, status) {
-            return data;
-          }).
-          error(function(data, status) {
-            return 'Error: ' + data;
-        });
+        var params = 'videos?id=' + videoId + '&key=' + this.settings.apiKey + '&type=video&part=snippet&callback=JSON_CALLBACK';
+        var url = this.settings.url + params;
+        
+        return $http({method: this.settings.method, url: url});
     };
 }

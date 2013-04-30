@@ -10,7 +10,7 @@ app.config(function($routeProvider) {
             controller: 'searchController',
             templateUrl: 'views/search.html'
         }).
-        when('/watch', {
+        when('/watch/:videoId', {
             controller: 'videoItemController',
             templateUrl: 'views/details.html'
         }).

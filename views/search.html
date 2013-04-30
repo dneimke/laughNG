@@ -1,1 +1,44 @@
 <h2>Search</h2>
+
+<style type="text/css">
+    .item {
+        margin: 0 0 25px 0;
+        border-radius: 8px;
+        background-size: 400px 130px;
+        background-repeat: no-repeat;
+        -webkit-transition: background 0.2s ease-out;
+        background-position-x: 250px;
+        background-position-y: 100%;
+        box-shadow: 0 2px 4px grey;
+        padding-left: 16px;
+        background-color: white;
+    }
+    
+    .video {
+        background-image: -webkit-gradient( linear, left top, right top, from(rgba(255,255,255,0)), to(rgba(255,255,255,0.1)) );
+        height: 130px;
+    }
+    
+    .videotitle {
+        font-size: 175%;
+        text-shadow: 1px 1px 10px #fff;
+    }
+    
+</style>
+
+
+<input type='text' ng-model='term' />
+<button ng-click="search()">search</button>
+
+<hr />
+
+<div class='container' ng-repeat='item in items'>
+    <div class="item">
+        <a href='#/watch/{{item.id}}'>
+            <div style='float: left background-image: url('{{item.imageUrl}}')'></div>
+            <div class="video">
+                <div class="videotitle">{{item.title}}</div>
+            </div>
+        </a>
+    </div>    
+</div>
