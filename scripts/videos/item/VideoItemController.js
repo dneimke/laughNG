@@ -3,18 +3,15 @@
 /*
  * @model - VideoItemModel
  */
-function VideoItemController($scope, $routeParams, model) {
+function VideoItemController($scope, $routeParams, itemModel) {
     
     $scope.selectedVideo = {};
-    var _model = model;
+    var model = itemModel;
     
     console.log($routeParams.videoId);
     
-    _model.getVideo($routeParams.videoId).then(function(response) {
-        
-            var tmp = response.data;
-
-            $scope.selectedVideo = tmp;
-        });
-    
+    model.getVideo($routeParams.videoId).then(function (response) {
+        var tmp = response.data;
+        $scope.selectedVideo = tmp;
+    });
 }

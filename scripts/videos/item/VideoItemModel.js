@@ -5,12 +5,11 @@
  */
 function VideoItemModel(videoService) {
     
-    var _service = videoService;
+    var service = videoService;
     
-    this.getVideo = function(videoId) {
+    this.getVideo = function (videoId) {
         console.log('SearchModel.getVideo');
 
-        return _service.get(videoId);
-            
-    }
+        return service.get(videoId);
+    };
 }

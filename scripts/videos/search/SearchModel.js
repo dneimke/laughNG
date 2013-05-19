@@ -5,13 +5,10 @@
  */
 function SearchModel(videoService) {
     
-    var _service = videoService;
+    var service = videoService;
     
-    this.doSearch = function(term) {
+    this.doSearch = function (term) {
         console.log('SearchModel.doSearch');
-
-        return _service.search(term);
-            
-    } 
-     
+        return service.search(term);
+    };
 }
