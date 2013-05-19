@@ -3,7 +3,7 @@
 var app = angular.module('videoPlayer', ['videoModule']);
 
 
-app.config(function($routeProvider) {
+app.config(function ($routeProvider) {
     
     $routeProvider.
         when('/', {
