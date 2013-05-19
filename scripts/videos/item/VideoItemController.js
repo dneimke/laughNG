@@ -12,8 +12,6 @@ function VideoItemController($scope, $routeParams, model) {
     
     _model.getVideo($routeParams.videoId).then(function(response) {
         
-            var data = [];
-            
             var tmp = response.data;
 
             $scope.selectedVideo = tmp;
